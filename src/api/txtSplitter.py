@@ -3,9 +3,9 @@ def splitTxt(init):
     # fs: dictionary kamus bahasa asal
     filename = ""
     if (init == "sunda"):
-        filename = "../../../doc/sunda.txt"
+        filename = "../../doc/sunda.txt"
     else: # init == "indo"
-        filename = "../../../doc/indonesia.txt"
+        filename = "../../doc/indonesia.txt"
     file = open(filename,"r")
     arrOfSentences = {}
     for line in file:
