@@ -11,10 +11,6 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 @cross_origin()
 def sundaindo():
     myData = request.get_json()
-    # print(myData)
-    # print(myData['file'])
-    # kamus = myData.get("file")
-    # print(text)
     text = myData.get("text")
     result = arrToString(iter(text,"sunda"))
     return jsonify({'data' : result}),200
@@ -23,10 +19,6 @@ def sundaindo():
 @cross_origin()
 def indosunda():
     myData = request.get_json()
-    # print(myData)
-    # print(myData['file'])
-    # kamus = myData.get("file")
-    # print(text)
     text = myData.get("text")
     result = arrToString(iter(text,"indo"))
     return jsonify({'data' : result}),200

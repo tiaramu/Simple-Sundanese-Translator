@@ -1,6 +1,3 @@
-# from txtSplitter import *
-# from regexp import *
-
 def preLO(text, length, pattern): # return an array
     # fill the value of Last Occurrence in loArray
     # for all the text's characters 
@@ -82,49 +79,3 @@ def bmMatch(text, pattern): # return int
             j = lengthOfPattern - 1
 
     return idx
-
-# # return a dictionary containing jumlah and waktu
-# # nearest the pattern and the sentences
-# # input value single text and pattern
-# def boyerMoore(text, pattern):
-#     textContent = text[1]
-#     # split the text into sentences
-#     arrayOfSentences = splitTxt(textContent)
-#     patternIdx = -1
-#     # the chosen sentence which contain pattern
-#     patSent = ""
-
-#     for sentence in arrayOfSentences:
-#         # pattern has found
-#         if (patternIdx != -1):
-#             break
-
-#         # pattern has not found
-#         else:
-#             idx = bmMatch(sentence,pattern)
-#             # pattern found
-#             if (idx != -1):
-#                 patternIdx = idx
-#                 patSent = sentence
-
-#     sentJumlah = jumlah(patSent, pattern)
-#     sentWaktu = waktu(patSent)
-#     if (sentWaktu == ""):
-#         sentWaktu = waktu(text)
-
-#     bmDict =  {
-#         "judul" : text[0],
-#         "kalimat" : patSent,
-#         "jumlah" : sentJumlah,
-#         "waktu" : sentWaktu
-#     }
-
-#     return bmDict
-
-# # return list of dictionary of text(filename, content), 
-# # sentence containing pattern, jumlah, waktu
-# def iterBM(listOfText, pattern):
-#     listDict = []
-#     for text in listOfText:
-#         listDict.append(boyerMoore(text,pattern))
-#     return listDict

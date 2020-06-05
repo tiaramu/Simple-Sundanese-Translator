@@ -17,15 +17,10 @@ def iter(text, option):
                     if (arrText[i] == each):
                         print(each)
                         print(dictKamus[each])
-
-                    # ubah
+                        # ubah
                         arrText[i] = dictKamus[each]
-                # text.replace(each, dictKamus[each])
-                # print(text)
-                # idx = idx
-
-        # else: # match not found
-            # do nothing
+                # else: # match not found
+                    # do nothing
     return arrText
 
 def arrToString(arr):
@@ -38,9 +33,3 @@ def arrToString(arr):
             strink += (each + " ")
     print(strink)
     return strink
-
-# def fin()
-
-# print(iter("abdi teh ayeuna","sunda"))
-
-# print(arrToString(iter("abdi Tiara bogoh ka anjeun","sunda")))

@@ -1,17 +1,14 @@
 import React, { Component } from "react";
-// import Answer from "./Answer";
 import "./Form.css";
 
 class Form extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            // file : [], //
             text : "", // text asal
             option : "", // dari bahasa apa ke bahasa apa
             result: [] // text hasil translasi
         }
-        // this.handleClick = this.handleClick.bind(this)
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
     }
@@ -20,30 +17,11 @@ class Form extends Component {
         this.setState({[event.target.name] : event.target.value })
     }
 
-    // handleClick(event) {
-    //     var fileArray = []
-    //         Array.from(event.target.files).map( file =>{
-    //                 var array = []
-    //                 array.push(file.name) 
-
-    //                 var fileReader = new FileReader()
-    //                 fileReader.onloadend = e => (array.push(fileReader.result))
-    //                 fileReader.readAsText(file)
-
-    //                 fileArray.push(array)
-    //             }
-    //         )
-    //     this.setState({file : fileArray})
-    // }
-
     handleSubmit() {
-        // event.preventDefault();
-        // if ((this.state.file !== {}) && (this.state.keyword !== "") && (this.state.alg !== "")) {
             fetch('http://localhost:5000/'.concat(this.state.option), {
                 method : 'post',
                 headers : {'Content-type' : 'application/json'},
                 body: JSON.stringify({
-                    // 'file' : this.state.file,
                     'text' : this.state.text
                 })
             }).then(res => res.json())
@@ -56,21 +34,6 @@ class Form extends Component {
     render() {
         return (
             <div>
-                {/* <div>
-                    File Kosa Kata: 
-                    <br></br>
-                    <label for="file-upload" class="custom-file-upload">
-                        <i class="fa fa-cloud-upload"></i> Pilih File
-                    </label>
-                    <input 
-                        id="file-upload"
-                        type="file" 
-                        placeholder="Choose file" 
-                        name = "file"
-                        onChange={this.handleClick}
-                        required multiple
-                    />
-                </div> */}
                 <br></br>
                 <div>
                     Kalimat: 
@@ -110,9 +73,6 @@ class Form extends Component {
                     >Translasi!</button>
                 </div>
                 <br></br>
-                {/* <div className="HL">
-                    <br></br>
-                </div> */}
                 <br></br>
                 <div className="Result">
                     Hasil Translasi:
@@ -120,9 +80,6 @@ class Form extends Component {
                 </div>
                 <br></br>
                 <br></br>
-                {/* <div className="HL">
-                    <br></br>
-                </div> */}
             </div>
         )
     }
