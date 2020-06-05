@@ -5,6 +5,7 @@
 #### Referensi:
 #### [Create React App](https://github.com/facebook/create-react-app)
 
+
 Program ini merupakan aplikasi penerjemah bahasa antara bahasa Indonesia dan bahasa Sunda.
 Pada aplikasi ini, penerjemahan dilakukan dengan mengimplementasi teori pencocokan pola,
 tepatnya dengan Algoritma Boyer-Moore.
@@ -14,56 +15,73 @@ Program ini dibuat memanfaatkan gabungan Flask + React.
 
 Untuk menjalankan program ini, dibutuhkan:
 - Python (dibutuhkan versi 2.7, 3.5, atau yang lebih baru)
-    Cek Versi: 
-        * Tulis di terminal: 
-        python --version
-    Cara Install:
-        * Download installer di:
-        https://www.python.org/downloads/
+  * Cek Versi: 
+    Tulis di terminal: 
+    '''
+    python --version
+    '''
+  * Cara Install:
+    Download [di sini](https://www.python.org/downloads/)
+    
 - Node.js (dan npm)
-    Cek Versi:
-        * Tulis di terminal: 
-        node -v
-        npm - v
-    Cara Install:
-        ` Download installer di:
-        https://nodejs.org/en/download/
+  * Cek Versi:
+    Tulis di terminal: 
+    '''
+    node -v
+    npm - v
+    '''
+  * Cara Install:
+    Download [di sini](https://nodejs.org/en/download/)
 - Yarn
-    Cek Versi:
-        * Tulis di terminal: 
-        yarn --version
-    Cara Install:
-        * Download installer di:
-        https://classic.yarnpkg.com/en/docs/install/
-            atau
-        * Tulis di terminal:
-        npm install -save yarn
+  * Cek Versi:
+    Tulis di terminal: 
+    '''
+    yarn --version
+    '''
+  * Cara Install:
+    Download [di sini](https://classic.yarnpkg.com/en/docs/install/)
+    atau tulis di terminal:
+    npm install -save yarn
 - React-Scripts
-    Cara Install:
-        * Tulis di terminal:
-        npm install --save react-scripts
+  Cara Install:
+  * Tulis di terminal:
+  '''
+  npm install --save react-scripts
+  '''
 - Create-React-App
-    Cara Install:
-        * Tulis di terminal:
-        npm install --save create-react-app
+  Cara Install:
+  * Tulis di terminal:
+  '''
+  npm install --save create-react-app
+  '''
 - Flask (dan flask_cors)
-    Cara Install:
-        * Tulis di terminal:
-        pip install flask
-        pip install flask flask_cors
+  Cara Install:
+  * Tulis di terminal:
+  '''
+  pip install flask
+  pip install flask flask_cors
+  '''
         
 Cara menjalankan program:
 1. Buka cmd pada direktori:
    src/
 2. Tulis:
+   '''
    yarn start
-      atau
+   '''
+   atau
+   '''
    npm start
+   '''
 3. Buka cmd baru pada direktori:
+   '''
    src/api
+   '''
 4. Tulis:
+   '''
    set FLASK_APP=api.py
    flask run
+   '''
 5. Website penerjemah akan terbuka di browser.
 6. Tuliskan kalimat yang ingin diterjemahkan pada bagian "Tulis kalimat di sini!"
 7. Pilih ketentuan translasi pada bagian "Jenis Translasi"
