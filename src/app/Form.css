@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+  border: 1px solid #221243;
+  padding: 3px;
+  padding-left: 16px;
+  padding-right: 16px;
+  cursor: pointer;
+  background-color: #f8f8f8 ;
+  color: #221243;
+  font-size: smaller;
+  transition-duration: 0.3s;
+}
+
+.custom-file-upload:hover {
+  background-color: #9088a1 ;
+  color: #221243;
+  cursor: pointer;
+}
+
+.ButtonCont {
+  padding-left: 28vmax;
+  padding-right: 30vmax;
+}
+
+.Button {
+  justify-content: center;
+  background-color: #ffec78 ;
+  color: #221243; 
+  font-family: 'Montserrat';
+  font-weight: bold;
+  /* border-right: 111cm; */
+  border-radius: 7px;
+  padding: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition-duration: 0.3s;
+  border-width: 1px;
+}
+
+.Button:hover {
+  background-color: #9088a1 ;
+  color: #221243;
+  cursor: pointer;
+}
+
+/* .HL {
+  background-color: #FFEB3B;
+  display: flex;
+  height: 1px; 
+} */
+
