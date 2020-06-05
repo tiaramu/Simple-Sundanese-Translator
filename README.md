@@ -8,54 +8,54 @@
 Program ini merupakan aplikasi penerjemah bahasa antara bahasa Indonesia dan bahasa Sunda.
 Pada aplikasi ini, penerjemahan dilakukan dengan mengimplementasi teori pencocokan pola,
 tepatnya dengan Algoritma Boyer-Moore.
-Aplikasi ini dapat mendeteksi kata pada kamus kata yang tersedia 
+Aplikasi ini dapat mendeteksi kata pada kamus kata yang tersedia
 dan mentranslasikannya sesuai kamus data tersebut.
 Program ini dibuat memanfaatkan gabungan Flask + React.
 
 Untuk menjalankan program ini, dibutuhkan:
 - **Python** (dibutuhkan versi 2.7, 3.5, atau yang lebih baru)
-  * Cek Versi: 
+  * Cek Versi:  
     Tulis di terminal: 
     ```
     python --version
     ```
-  * Cara Install:
+  * Cara Install:  
     Download [di sini](https://www.python.org/downloads/)
     
 - **Node.js** (dan npm)
-  * Cek Versi:
+  * Cek Versi:   
     Tulis di terminal: 
     ```
     node -v
     npm - v
     ```
-  * Cara Install:
+  * Cara Install:  
     Download [di sini](https://nodejs.org/en/download/)
 - **Yarn**
-  * Cek Versi:
+  * Cek Versi:  
     Tulis di terminal: 
     ```
     yarn --version
     ```
-  * Cara Install:
-    Download [di sini](https://classic.yarnpkg.com/en/docs/install/)
+  * Cara Install:  
+    Download [di sini](https://classic.yarnpkg.com/en/docs/install/)  
     atau tulis di terminal:
     npm install -save yarn
 - **React-Scripts**
-  Cara Install:
-  * Tulis di terminal:
+  Cara Install:  
+  Tulis di terminal:
   ```
   npm install --save react-scripts
   ```
 - **Create-React-App**
-  Cara Install:
-  * Tulis di terminal:
+  Cara Install:  
+  Tulis di terminal:
   ```
   npm install --save create-react-app
   ```
 - **Flask** (dan flask_cors)
-  Cara Install:
-  * Tulis di terminal:
+  Cara Install:  
+  Tulis di terminal:
   ```
   pip install flask
   pip install flask flask_cors
