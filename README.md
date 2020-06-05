@@ -92,3 +92,6 @@ Untuk menjalankan program ini, dibutuhkan:
 8. Tekan tombol *"Translasi!"*
 9. Hasil translasi akan tertulis di layar
 10. Jika ingin menerjemahkan kalimat lain, ulangi langkah ke-6-8
+
+Psst!  
+Lihat tutorial-nya [di sini](https://youtu.be/yUoEVikfDq8)
