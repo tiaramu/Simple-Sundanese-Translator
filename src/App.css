@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f8f8 ;
+  color: whitesmoke;
+}
+
+.Title {
+  display: flex;
+  justify-content: center;
+  background-color: #ffec78 ;
+  color: #221243; 
+  font-family: 'Montserrat';
+}
+
+.Form {
+  padding-top: 1vmax;
+  padding-left: 10vmax;
+  padding-right: 10vmin;
+  font-family: 'Montserrat';
+  font-size: medium;
+  justify-content: center;
+  display: flex;
+  text-align: left;
+  color: #221243;
+}
